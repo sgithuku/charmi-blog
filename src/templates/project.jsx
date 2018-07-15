@@ -63,8 +63,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "DD.MM.YYYY")
-        client
-        service
         cover {
           childImageSharp {
             resize(width: 800) {
