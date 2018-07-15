@@ -12,8 +12,8 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "projects",
-        path: `${__dirname}/content/projects`
+        name: "blog",
+        path: `${__dirname}/blog`
       }
     },
     {
@@ -90,6 +90,7 @@ module.exports = {
       }
     },
     "gatsby-plugin-offline",
-    "gatsby-plugin-netlify"
+    "gatsby-plugin-netlify",
+    "gatsby-plugin-netlify-cms"
   ]
 };

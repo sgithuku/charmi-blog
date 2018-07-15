@@ -1,0 +1,19 @@
+
+backend:
+  name: github
+  repo: sgithuku/charmi-blog
+
+media_folder: static/assets
+public_folder: public
+
+collections:
+  - name: "blog"
+    label: "Blog post"
+    folder: "blog"
+    create: true
+    fields:
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: cover, label: Cover, widget: image }
+      - { name: body, label: Body, widget: markdown }
+
