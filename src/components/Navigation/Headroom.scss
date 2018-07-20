@@ -12,6 +12,8 @@ $transition-headroom: all 0.35s ease-in-out;
 }
 
 .headroom {
+  background-color: $brand-secondary;
+  border-bottom: 2px $borderColor solid;
   padding: 1rem 2rem;
   width: 100%;
 

@@ -9,7 +9,7 @@ const typography = new Typography({
   headerFontFamily: [config.headerFontFamily, "sans-serif"],
   bodyFontFamily: [config.bodyFontFamily, "sans-serif"],
   scaleRatio: 2.5,
-  headerWeight: 700,
+  headerWeight: 100,
   googleFonts: [
     {
       name: config.headerFontFamily,

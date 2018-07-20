@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
 import Img from "gatsby-image";
-import Palette from "react-palette";
+// import Palette from "react-palette";
 import styles from "./ProjectListing.module.scss";
 
 export default class ProjectListing extends React.PureComponent {
@@ -33,11 +33,23 @@ export default class ProjectListing extends React.PureComponent {
                 key={project.path}
                 className={styles.link}
               >
-                <div className={styles.overlay} />
+                <div className={styles.overlay}>
+                  <Link
+                    to={project.path}
+                    key={project.path}
+                    className={styles.link}
+                  >
+                    <div className={styles.positionFix}>
+                      <h3 className={styles.title} key={project.title}>
+                        {project.title}
+                      </h3>
+                    </div>
+                  </Link>
+                </div>
               </Link>
             </div>
             <Link to={project.path} key={project.path} className={styles.link}>
-              <h3 className={styles.title} key={project.title}>
+              <h3 className={styles.titleMobile} key={project.title}>
                 {project.title}
               </h3>
             </Link>

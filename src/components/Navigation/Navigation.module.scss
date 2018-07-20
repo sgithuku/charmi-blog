@@ -5,7 +5,7 @@
   display: flex;
 
   a {
-    color: $body-color;
+    color: $white;
 
     &:hover {
       color: $brand-primary;
@@ -44,7 +44,7 @@
   a {
     &:hover,
     &:focus {
-      color: $body-color;
+      color: $brand-primary;
       text-decoration: none;
     }
   }
@@ -61,7 +61,8 @@
 }
 
 .mobileNav {
-  background-color: $background-color;
+  background-color: $brand-secondary;
+  border-bottom: 2px solid $borderColor;
   display: none;
   height: 50px;
   position: fixed;
@@ -90,6 +91,7 @@
   h3 {
     font-size: 23px !important;
     margin-bottom: 0 !important;
+    color: $background-color;
   }
 }
 

@@ -7,9 +7,9 @@ media_folder: static/assets
 public_folder: public
 
 collections:
-  - name: "blog"
-    label: "Blog post"
-    folder: "blog"
+  - name: blog
+    label: Blog post
+    folder: blog
     create: true
     fields:
       - { name: date, label: Date, widget: date }

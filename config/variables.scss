@@ -66,12 +66,14 @@ $brand-primary: #ea9010;
 $brand-secondary: #222e50;
 $grey: #252525;
 $black: #000;
+$borderColor: lighten($brand-secondary, 30%);
+$overlayColor: RGBA(234, 144, 16, 0.8);
 
 // Configure your grid here
 // You don't need to change it!
 
 $content-width: 100vw;
-$gutter: 0;
+$gutter: 15px;
 $columns: 3;
 
 $row-size: calc(
@@ -100,7 +102,8 @@ html {
 // --------------------------------------------
 
 $background-color: #fff;
-$body-color: #222;
+$white: #fff;
+$body-color: $brand-secondary;
 $link-color: $brand-primary;
 $link-decoration: none;
 $link-color-hover: darken($brand-primary, 15%);

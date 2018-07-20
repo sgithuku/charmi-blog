@@ -1,9 +1,14 @@
 @import "../../config/variables";
 
+.firstContent {
+  margin: $distance auto;
+  max-width: $container-text;
+}
 .content {
   margin: 0 auto;
-  padding-bottom: $distance;
-  padding-top: $distance;
+  // padding-bottom: $distance;
+  // padding-top: $distance;
+  max-width: $container-text;
 }
 
 .headerWrapper {
@@ -26,7 +31,13 @@
 }
 
 .title {
-  margin: 1rem 0;
+  // margin: 1rem 0;
+  justify-content: center;
+  text-align: center;
+  // text-decoration: underline $brand-secondary;
+  border-bottom: 2px solid $brand-secondary;
+  padding-bottom: $gutter;
+  text-transform: uppercase;
 }
 
 .information {
@@ -51,4 +62,8 @@
 
 .bottom {
   font-size: 125%;
+}
+
+img {
+  margin-bottom: $distance !important;
 }

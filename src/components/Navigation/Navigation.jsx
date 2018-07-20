@@ -34,9 +34,9 @@ export default class Navigation extends Component {
                 <Link to="/about" activeClassName="active">
                   About
                 </Link>
-                <Link to="/contact" activeClassName="active">
+                {/* <Link to="/contact" activeClassName="active">
                   Contact
-                </Link>
+                </Link> */}
               </span>
             </nav>
             <div className={styles.name}>
@@ -55,19 +55,15 @@ export default class Navigation extends Component {
                 >
                   <FaInstagram />
                 </a>
-                {/* <a href="https://www.behance.net/lekoarts" target="_blank" rel="noopener noreferrer">
-                  <FaBehance />
-                </a>
-                <a href="https://dribbble.com/LeKoArts" target="_blank" rel="noopener noreferrer">
-                  <FaDribbble />
-                </a> */}
               </span>
             </div>
           </Fade>
         </Headroom>
         <div className={styles.mobileNav}>
           <div className={styles.mobileNavName}>
-            <h3>{config.siteTitle}</h3>
+            <Link to="/" activeClassName="active">
+              <h3>{config.siteTitle}</h3>
+            </Link>
           </div>
           <div className={styles.menu}>
             <Menu
@@ -85,13 +81,13 @@ export default class Navigation extends Component {
               >
                 About
               </Link>
-              <Link
+              {/* <Link
                 to="/contact"
                 activeClassName="active"
                 onClick={() => this.closeMenu()}
               >
                 Contact
-              </Link>
+              </Link> */}
               <div className={styles.mobileNavSocialMedia}>
                 <a
                   href="https://www.instagram.com/lekoarts.de"
@@ -99,20 +95,6 @@ export default class Navigation extends Component {
                   rel="noopener noreferrer"
                 >
                   <FaInstagram />
-                </a>
-                <a
-                  href="https://www.behance.net/lekoarts"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaBehance />
-                </a>
-                <a
-                  href="https://dribbble.com/LeKoArts"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaDribbble />
                 </a>
               </div>
             </Menu>

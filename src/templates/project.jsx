@@ -22,33 +22,19 @@ const Project = props => {
     <div className="container project-container">
       <Helmet title={`${project.title} | ${config.siteTitle}`} />
       <SEO postPath={slug} postNode={postNode} postSEO />
-      <div className={styles.headerWrapper}>
-        <section className={styles.header}>
-          <Img sizes={project.cover} />
-          <div className={styles.title}>
-            <Fade down duration={1250} tag="h1">
-              {project.title}
-            </Fade>
-          </div>
-          <div className={styles.information}>
-            <div className={styles.infoBlock}>
-              <Fade up duration={1250} className={styles.top}>
-                {config.date}
-              </Fade>
-              <Fade up duration={1250} delay={500} className={styles.bottom}>
-                {project.date}
-              </Fade>
-            </div>
-          </div>
-        </section>
-      </div>
       <Container>
+        <div className={styles.firstContent}>
+          <Img sizes={imageURL} />
+          <Fade down duration={1250} tag="h1" className={styles.title}>
+            {project.title}
+          </Fade>
+        </div>
         <div
           className={styles.content}
           dangerouslySetInnerHTML={{ __html: postNode.html }}
         />
       </Container>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
@@ -65,7 +51,7 @@ export const pageQuery = graphql`
         date(formatString: "DD.MM.YYYY")
         cover {
           childImageSharp {
-            resize(width: 800) {
+            resize(width: 1200) {
               src
             }
           }
