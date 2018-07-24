@@ -3,12 +3,12 @@ backend:
   name: github
   repo: sgithuku/charmi-blog
 
-media_folder: images
-# public_folder: blog
+media_folder: blog/images
+public_folder: /images
 
 collections:
   - name: blog
-    label: Blog post
+    label: Blog posts
     folder: blog
     create: true
     fields:
