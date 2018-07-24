@@ -1,6 +1,6 @@
 ---
 title: "Asian fusion - Passion & Almond dumplings"
-cover: "./1.jpg"
+cover: "../images/1.jpg"
 date: "2017-10-25"
 ---
 

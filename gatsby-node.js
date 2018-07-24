@@ -5,7 +5,9 @@ const { fmImagesToRelative } = require("gatsby-remark-relative-images");
 
 exports.onCreateNode = ({ node, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators;
+
   fmImagesToRelative(node);
+
   let slug;
   if (node.internal.type === "MarkdownRemark") {
     if (
