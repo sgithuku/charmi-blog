@@ -38,7 +38,7 @@ export const pageQuery = graphql`
                 sizes(
                   maxWidth: 850
                   quality: 90
-                  traceSVG: { color: "#f3f3f3" }
+                  traceSVG: { color: "#222e50" }
                 ) {
                   ...GatsbyImageSharpSizes_tracedSVG
                 }

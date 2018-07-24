@@ -77,13 +77,13 @@ module.exports = {
         display: "minimal-ui",
         icons: [
           {
-            src: "/logos/logo-192x192.png",
-            sizes: "192x192",
+            src: "/logos/logo@0.5x.png",
+            sizes: "240x240",
             type: "image/png"
           },
           {
-            src: "/logos/logo-512x512.png",
-            sizes: "512x512",
+            src: "/logos/logo@0.1x.png",
+            sizes: "48x48",
             type: "image/png"
           }
         ]
