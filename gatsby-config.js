@@ -17,9 +17,22 @@ module.exports = {
       }
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: `${__dirname}/blog/images`
+      }
+    },
+    {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
+          {
+            resolve: `gatsby-remark-relative-images`,
+            options: {
+              name: "images" // Must match the source name ^
+            }
+          },
           {
             resolve: "gatsby-remark-images",
             options: {

@@ -1,6 +1,6 @@
 ---
 title: "Very berry smoothie"
-cover: "./3.jpg"
+cover: "../images/3.jpg"
 date: "2017-10-27"
 ---
 

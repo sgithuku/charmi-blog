@@ -3,8 +3,8 @@ backend:
   name: github
   repo: sgithuku/charmi-blog
 
-media_folder: static/assets
-public_folder: public
+media_folder: images
+# public_folder: blog
 
 collections:
   - name: blog
