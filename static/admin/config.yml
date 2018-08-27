@@ -4,7 +4,9 @@ backend:
   repo: sgithuku/charmi-blog
 
 media_folder: "blog/images"
-public_folder: "/images"
+public_folder: "blog/images"
+
+site_url: http://charmicooks.netlify.com
 
 collections:
   - name: blog
