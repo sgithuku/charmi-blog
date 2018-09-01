@@ -14,7 +14,7 @@ const Project = props => {
   const { slug } = props.pathContext;
   const postNode = props.data.markdownRemark;
   const project = postNode.frontmatter;
-  const imageURL = project.cover.childImageSharp.resize.src;
+  const imageURL = project.cover.childImageSharp.sizes;
   if (!project.id) {
     project.id = slug;
   }
@@ -51,8 +51,8 @@ export const pageQuery = graphql`
         date
         cover {
           childImageSharp {
-            resize(width: 1200) {
-              src
+            sizes(maxWidth: 1200) {
+              ...GatsbyImageSharpSizes
             }
           }
         }
