@@ -1,10 +1,9 @@
-
 backend:
   name: github
   repo: sgithuku/charmi-blog
 
-media_folder: "blog/images"
-public_folder: "blog/images"
+media_folder: blog/images
+public_folder: /images
 
 site_url: http://charmicooks.netlify.com
 
@@ -18,4 +17,3 @@ collections:
       - { name: title, label: Title }
       - { name: cover, label: Cover, widget: image }
       - { name: body, label: Body, widget: markdown }
-

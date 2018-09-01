@@ -33,7 +33,12 @@ module.exports = {
               name: "images" // Must match the source name ^
             }
           },
-          `gatsby-plugin-netlify-cms-paths`,
+          {
+            resolve: `gatsby-plugin-netlify-cms-paths`,
+            options: {
+              cmsConfig: "/static/admin/config.yml"
+            }
+          },
           // https://github.com/escaladesports/gatsby-plugin-netlify-cms-paths
           {
             resolve: "gatsby-remark-images",
