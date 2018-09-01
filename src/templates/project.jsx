@@ -24,9 +24,9 @@ const Project = props => {
       <SEO postPath={slug} postNode={postNode} postSEO />
       <Container>
         <div className={styles.firstContent}>
-          <Img sizes={imageURL} />
           <Fade down duration={1250} tag="h1" className={styles.title}>
             {project.title}
+            <Img sizes={imageURL} />
           </Fade>
         </div>
         <div
